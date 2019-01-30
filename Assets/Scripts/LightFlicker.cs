@@ -13,6 +13,8 @@ public class LightFlicker : MonoBehaviour
 
     public Material material;
 
+    public AudioClip clip;
+
 	// Use this for initialization
 	void Start () 
     {
@@ -35,6 +37,9 @@ public class LightFlicker : MonoBehaviour
             {
                 material.EnableKeyword("_EMISSION");
             }
+
+            // light switch sound
+            GetComponent<AudioSource>().PlayOneShot(clip);
         }
     }
 }
