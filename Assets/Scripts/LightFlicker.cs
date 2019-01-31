@@ -39,7 +39,7 @@ public class LightFlicker : MonoBehaviour
             }
 
             // light switch sound
-            GetComponent<AudioSource>().PlayOneShot(clip);
+            GetComponent<AudioSource>().PlayOneShot(clip);  
         }
     }
 }
