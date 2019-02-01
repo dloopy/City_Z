@@ -8,6 +8,9 @@ public class AudioMix : MonoBehaviour
     public AudioMixerSnapshot day;
     public AudioMixerSnapshot night;
 
+    //public AudioClip[] groundSteps;
+    //public AudioClip[] concreteSteps;
+
     // Start is called before the first frame update
     void Start()
     {

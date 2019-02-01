@@ -4,7 +4,8 @@
 AnimatorController:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: Eve_animControl
   serializedVersion: 5
   m_AnimatorParameters:
@@ -31,11 +32,12 @@ AnimatorController:
 BlendTree:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: Blend Tree
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 7400002, guid: 425d27c20c5a343db9caff73a6f03d75, type: 3}
+    m_Motion: {fileID: 7400000, guid: b920c2009b8e44db68bb9cb1fa0b4a34, type: 2}
     m_Threshold: -0.06
     m_Position: {x: 0, y: 0}
     m_TimeScale: -1
@@ -51,7 +53,7 @@ BlendTree:
     m_DirectBlendParameter: Blend
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 425d27c20c5a343db9caff73a6f03d75, type: 3}
+    m_Motion: {fileID: 7400000, guid: e22cb18af33e343c9b58564bf3f3c4e2, type: 2}
     m_Threshold: 0.06
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -70,7 +72,8 @@ AnimatorState:
   serializedVersion: 5
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: Locomotion
   m_Speed: 1
   m_CycleOffset: 0
@@ -95,7 +98,8 @@ AnimatorStateMachine:
   serializedVersion: 5
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: New Layer
   m_ChildStates: []
   m_ChildStateMachines: []
@@ -113,7 +117,8 @@ AnimatorStateMachine:
   serializedVersion: 5
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: Base Layer
   m_ChildStates:
   - serializedVersion: 1
