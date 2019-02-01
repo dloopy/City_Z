@@ -4,14 +4,18 @@ using UnityEngine;
 
 public class RockFall : MonoBehaviour
 {
-    public Rigidbody rocks;
+    public Rigidbody[] rocks;
     public Transform instantiatePosition;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            Instantiate(rocks, instantiatePosition.position, instantiatePosition.rotation);
+            for (int i = 0; i < rocks.Length; i++)
+            {
+
+                Instantiate(rocks[i], instantiatePosition.position, instantiatePosition.rotation);
+            }
         }
     }
 }
