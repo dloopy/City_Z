@@ -10,6 +10,8 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject pauseMenuUI;
 
+    public AudioSource audioSource;
+
     // Update is called once per frame
     void Update()
     {
@@ -31,6 +33,8 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         gameIsPaused = false;
+        audioSource.Play();
+     
     }
 
     void Pause()
@@ -38,12 +42,16 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         gameIsPaused = true;
+        audioSource.Pause();
     }
 
     public void LoadMenu()
     {
         Debug.Log("Loading menu...");
-        //SceneManager.LoadScene("Menu"); // Use a variable instead of string to go to the menu
+        pauseMenuUI.SetActive(false);
+        Time.timeScale = 1f;
+        gameIsPaused = false;
+        SceneManager.LoadScene("Start"); // Use a variable instead of string to go to the menu
     }
 
     public void QuitGame()

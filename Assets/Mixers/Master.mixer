@@ -12,6 +12,7 @@ AudioMixerController:
   m_Snapshots:
   - {fileID: 24500006}
   - {fileID: 245257939542083440}
+  - {fileID: 245717419256862854}
   m_StartSnapshot: {fileID: 24500006}
   m_SuspendThreshold: -80
   m_EnableSuspend: 1
@@ -25,7 +26,7 @@ AudioMixerController:
     - 95f6ff00f5a9e479f95cf2c52f740a36
     name: View
   m_CurrentViewIndex: 0
-  m_TargetSnapshot: {fileID: 24500006}
+  m_TargetSnapshot: {fileID: 245717419256862854}
 --- !u!243 &24300002
 AudioMixerGroupController:
   m_ObjectHideFlags: 0
@@ -43,6 +44,7 @@ AudioMixerGroupController:
   m_Pitch: 71e7a351f95fe41bfa403e3f8ba50bdc
   m_Effects:
   - {fileID: 24400004}
+  - {fileID: 244852232827797764}
   m_UserColorIndex: 0
   m_Mute: 0
   m_Solo: 0
@@ -157,6 +159,40 @@ AudioMixerEffectController:
   m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0
   m_Bypass: 0
+--- !u!244 &244456448863080816
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 5919f2251424d45bf95f4e94a513a7d1
+  m_EffectName: Lowpass Simple
+  m_MixLevel: b17c421444f0e4ac987d328296e85914
+  m_Parameters:
+  - m_ParameterName: Cutoff freq
+    m_GUID: 94e63df7780ee414b8656c17eb99b59b
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &244852232827797764
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: b399261aed5f44f6cb5749e1989a0b52
+  m_EffectName: Lowpass
+  m_MixLevel: f1ce31e26f8bb4bbb80529239c03f19c
+  m_Parameters:
+  - m_ParameterName: Cutoff freq
+    m_GUID: 0e9e3c12ad7114d71a7c6823955c6c5d
+  - m_ParameterName: Resonance
+    m_GUID: 49df3affa4f2a451f8dff955033e024e
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
 --- !u!244 &244871123102472406
 AudioMixerEffectController:
   m_ObjectHideFlags: 3
@@ -183,4 +219,23 @@ AudioMixerSnapshotController:
   m_FloatValues:
     b613e0fb90bce48038588e00d352d763: -80
     5eea008f12de245d582a8f57e48a4c69: -32.77572
+  m_TransitionOverrides: {}
+--- !u!245 &245717419256862854
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Pause
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: 77fb10679ff8c4b33b46307b452839bf
+  m_FloatValues:
+    0e9e3c12ad7114d71a7c6823955c6c5d: 308
+    91ba8ca4c9a474544b4ed13f8efa0c8e: 1
+    ff8e8fe5729144e00bca40db670fb4c2: 4600
+    f960553af0f4e448b85a7a516bceab57: 8479
+    b613e0fb90bce48038588e00d352d763: -3.8468575
+    db57330fa54cd4dcaabb7f54326407d8: -80
+    5eea008f12de245d582a8f57e48a4c69: -1.7612991
+    49df3affa4f2a451f8dff955033e024e: 2.3
   m_TransitionOverrides: {}
